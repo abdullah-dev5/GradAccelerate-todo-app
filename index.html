@@ -11,53 +11,28 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
     <main class="w-full max-w-xl bg-white shadow rounded-lg p-6 space-y-6">
 
-        <!-- Header -->
         <header class="text-center">
             <h1 class="text-3xl font-bold text-blue-600">Todo List</h1>
             <p class="text-gray-600 mt-1">Manage your tasks efficiently</p>
         </header>
 
         <section aria-label="Add New Task" class="flex flex-col sm:flex-row gap-3">
-            <input type="text" placeholder="Write your task..."
+            <input type="text" id="taskInput" placeholder="Write your task..."
                 class="flex-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-            <button
+            <button id="addBtn"
                 class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-200 flex items-center gap-2">
                 Add
             </button>
         </section>
 
-        <section aria-label="Task List" class="space-y-3">
-            <article class="flex justify-between items-center bg-gray-50 p-3 rounded-md shadow-sm">
-                <span class="text-gray-800">Learn Tailwind CSS</span>
-                <div class="flex gap-2">
-                    <button title="Edit" class="hover:scale-110 transition-transform">
-                        <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Edit Icon"
-                            class="w-5 h-5" />
-                    </button>
-                    <button title="Delete" class="hover:scale-110 transition-transform">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" alt="Delete Icon"
-                            class="w-5 h-5" />
-                    </button>
-                </div>
-            </article>
 
-            <article class="flex justify-between items-center bg-gray-50 p-3 rounded-md shadow-sm">
-                <span class="text-gray-800">Build Todo UI</span>
-                <div class="flex gap-2">
-                    <button title="Edit" class="hover:scale-110 transition-transform">
-                        <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Edit Icon"
-                            class="w-5 h-5" />
-                    </button>
-                    <button title="Delete" class="hover:scale-110 transition-transform">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" alt="Delete Icon"
-                            class="w-5 h-5" />
-                    </button>
-                </div>
-            </article>
+
+        <section aria-label="Task List" id="taskList" class="space-y-3">
         </section>
 
-
     </main>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
